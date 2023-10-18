@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> - CADASTRO DE EMPRESA - </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+        
+    <div class="logo">
+        <img src="/assets/logo.png" alt="" width="250px">
+    </div>
+    
+    <div class="container_form">
+
+        <h1>Cadastro de Empresa</h1>
+
+        <form class="form" action="https://api.sheetmonkey.io/form/8dxCzQM28ATBKhg8VdcST5   " method="post">
+            
+            <div class="form_grupo">
+                <label for="nome" class="form_label">Nome</label>
+                <input type="text" name="Nome" class="form_input" id="nome" placeholder="" required>
+            </div>
+            <div class="form_grupo">
+                <label for="nomedaempresa" class="form_label">Nome da Empresa</label>
+                <input type="text" name="Nome-da-Empresa" class="form_input" id="nomedaempresa" placeholder="" required>
+            </div>
+            <div class="form_grupo">
+                <label for="cpf-cnpj" class="form_label">CPF / CNPJ</label>
+                <input type="number" name="CPF-CNPJ" class="form_input" id="cpf-cnpj" placeholder="CPF ou CNPJ da Empresa" required>
+            </div>
+            <div class="form_grupo">
+                <label for="whatsapp" class="form_label">Whatsapp</label>
+                <input type="number" name="Whatsapp" class="form_input" id="whatsapp" placeholder="(xx)xxxxx-xxxx" required>
+            </div>
+                    
+            
+            <div class="form_grupo">
+            <label for="area" class="text">Área de Atuação</label>
+                <select name="Area" class="dropdown" required>
+                    
+                    <option selected disabled class="form_select_option" value="">Selecione</option>
+                    <option value="ac" class="form_select_option">Finanças</option>
+                    <option value="ac" class="form_select_option">Educação</option>
+                </select>
+            </div>
+            
+            <div class="form_grupo">
+                <label for="uf" class="text">UF</label>
+                <select name="UF" class="dropdown" required>
+                    <option selected disabled class="form_select_option" value="">Selecione</option>
+                    <option value="ac" class="form_select_option">Acre</option>
+                    <option value="al" class="form_select_option">Alagoas</option>
+                    <option value="ap" class="form_select_option">Amapá</option>
+                    <option value="am" class="form_select_option">Amazonas</option>
+                    <option value="ba" class="form_select_option">Bahia</option>
+                    <option value="ce" class="form_select_option">Ceará</option>
+                    <option value="df" class="form_select_option">Distrito Federal</option>
+                    <option value="es" class="form_select_option">Espirito Santo</option>
+                    <option value="go" class="form_select_option">Goiás</option>
+                    <option value="ma" class="form_select_option">Maranhão</option>
+                    <option value="ms" class="form_select_option">Mato Grosso do Sul</option>
+                    <option value="mt" class="form_select_option">Mato Grosso</option>
+                    <option value="mg" class="form_select_option">Minas Gerais</option>
+                    <option value="pa" class="form_select_option">Pará</option>
+                    <option value="pb" class="form_select_option">Paraíba</option>
+                    <option value="pr" class="form_select_option">Paraná</option>
+                    <option value="pe" class="form_select_option">Pernambuco</option>
+                    <option value="pi" class="form_select_option">Piauí</option>
+                    <option value="rj" class="form_select_option">Rio de Janeiro</option>
+                    <option value="rj" class="form_select_option">Rio de Janeiro</option>
+                    <option value="rn" class="form_select_option">Rio Grande do Norte</option>
+                    <option value="ro" class="form_select_option">Rondônia</option>
+                    <option value="rr" class="form_select_option">Roraima</option>
+                    <option value="sc" class="form_select_option">Santa Catarina</option>
+                    <option value="sp" class="form_select_option">São Paulo</option>
+                    <option value="se" class="form_select_option">Sergipe</option>
+                    <option value="to" class="form_select_option">Tocantins</option>
+                </select>
+            </div>
+                    
+            
+            
+            
+                <div class="submit">
+                  <input type="hidden" name="acao" value="enviar">
+                  <button type="submit" name="Submit" class="submit_btn">Download E-Book</button>
+                </div>
+            
+        </form>
+
+</div><!--container_form-->
+    
+</body>
+</html>

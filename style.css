@@ -3,24 +3,21 @@
     margin:0;
 }
 
-
-
-
 .logo {
     display: flex;
     justify-content: center;
-    padding: 30px 10px 30px;
+    padding: 20px 5px 20px;
 }
 
 .container_form {
-    width: 400px;
+    width: 380px;
     margin: auto;
     display: flex;
     flex-direction: column;
     background:#e7e7e7; 
     box-shadow: 1px 0px 1.2px 0px #b6b6b6; 
     border-radius:10px; 
-    padding:1em;
+    padding:10PX;
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
 
@@ -29,26 +26,21 @@
 .container_form h1 {
     
     font-family: 'Roboto', sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     color: #ED6C4C;
-    border-bottom: 1px #f0eded solid;
-    margin-bottom: 10px;
     padding-bottom: 10px;
     text-align: center;
 
 }
 
 .form_grupo {
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
     margin-bottom: 30px;
-    position: relative;
 }
 
 .form_grupo .legenda { 
 
     width: 100%;
-    float: left;
     margin-top: 15px;
     margin-bottom: 15px;
     font-weight: bold;
@@ -68,10 +60,10 @@
     background-color: #1F9DAB;
     color: #fff;
     font-family: inherit;
-    font-size: 25px;
+    font-size: 20px;
     font-family:'Roboto', sans-serif;
     border-radius: 6px;
-    margin: 20px auto;
+    margin: 10px auto;
     cursor: pointer;
     transition: all 0.3s;
 }
@@ -85,15 +77,15 @@
 
 .dropdown {
     display: block;
-    font-size: 20px;
+    font-size: 15px;
     font-family: inherit;
     color: #606060;
     border-radius: 4px;
     border: 1px #f2f2f2 solid;
     background: #fdfdfd;
     outline: none;
-    padding: 10px 15px;
-    width: 98%;
+    padding: 5px 5px;
+    width: 100%;
 }
 
 .form_new_input {
@@ -108,21 +100,19 @@
     width: 100%;
     margin-bottom: 10px;
     position: relative;
-
 }
 
 .form_input {
 
-    font-size: 20px;
+    font-size: 15px;
     font-family: 'Roboto', sans-serif;
-    padding: 10px 10px 10px 20px;
+    padding: 5px 5px 5px 8px;
     border-radius: 4px;
     border: 1px #f2f2f2 solid;
     background: #fdfdfd;
     outline: none;
-    width: 90%;
+    width: 96%;
     transition: all 0.3s;
-
 }
 
 .form_message,
@@ -141,4 +131,51 @@
     margin-bottom: 15px;
     font-weight: bold;
     
+}
+
+.cookies-msg {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    width: 80%;
+    background-color:#606060;
+    position: fixed;
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+    color: #fff;
+    display: none;
+}
+
+.cookies-msg.mostrar{
+    display: block;
+}
+
+.cookies-msg .cookies-txt {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding: 15px;
+
+}
+
+.cookies-msg .cookies-btn {
+    margin-left: 20px;
+}
+
+.cookies-msg .cookies-btn button{
+    background-color: #ED6C4C;
+    font-family: 'Roboto', sans-serif;
+    padding: 5px 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 5px;
+    border-style: none;
+    transition: .2s;
+}
+
+.cookies-msg .cookies-btn button:hover{
+    transform: scale(1.1);
 }

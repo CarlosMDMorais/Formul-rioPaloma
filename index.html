@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> - CADASTRO DE EMPRESA - </title>
+    <title>LEI DO BEM - MATECH SOLUTION</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/ico.png" type="image/x-icon">
 
 </head>
 <body>
         
     <div class="logo">
-        <img src="logo.png" alt="" width="250px">
+        <img src="/assets/logo.png" alt="" width="250px">
     </div>
     
     <div class="container_form">
@@ -30,10 +31,17 @@
                 <label for="nomedaempresa" class="form_label">Nome da Empresa</label>
                 <input type="text" name="Nome da Empresa" class="form_input" id="nomedaempresa" placeholder="" required>
             </div>
+            
             <div class="form_grupo">
-                <label for="cpf-cnpj" class="form_label">CPF / CNPJ</label>
-                <input type="number" name="CPF-CNPJ" class="form_input" id="cpf-cnpj" placeholder="CPF ou CNPJ da Empresa" required>
-            </div>
+                <label for="lucro" class="text">Opera em Lucro Real?</label>
+                    <select name="Opera-Lucro-Real" class="dropdown" required>
+                        
+                        <option selected disabled class="form_select_option" value="">Selecione</option>
+                        <option value="Sim" class="form_select_option">Sim</option>
+                        <option value="Não" class="form_select_option">Não</option>
+                    </select>
+                </div>
+
             <div class="form_grupo">
                 <label for="whatsapp" class="form_label">Whatsapp</label>
                 <input type="number" name="Whatsapp" class="form_input" id="whatsapp" placeholder="(xx)xxxxx-xxxx" required>
@@ -83,15 +91,29 @@
                     <option value="SE" class="form_select_option">Sergipe</option>
                     <option value="TO" class="form_select_option">Tocantins</option>
                 </select>
-            </div>                 
-                      
-            <div class="submit">
-                <input type="hidden" name="acao" value="enviar">
-                <button type="submit" name="Submit" class="submit_btn">Download E-Book</button>
-            </div>            
+            </div>
+                    
+            
+                <div class="submit">
+                  <input type="hidden" name="acao" value="enviar">
+                  <button type="submit" name="Submit" class="submit_btn">Download E-Book</button>
+                </div>
+            
         </form>
 
 </div><!--container_form-->
-    
+
+<div class="cookies-msg" id="cookies-msg">
+    <div class="cookies-txt">
+        <p>Termo de Consentimento para Tratamento de Dados
+            Este documento visa registrar a manifestação livre, informada e inequívoca pela qual o Titular concorda com o tratamento de seus dados pessoais para finalidade específica, em conformidade com a Lei nº 13.709 - Lei Geral de Proteção de Dados Pessoais (LGPD).
+        </p>
+        <div class="cookies-btn">
+            <button onclick="aceito()">Aceitar</button>
+        </div>
+    </div>
+</div>    
+<script src="cookies.js"></script>
+
 </body>
 </html>
